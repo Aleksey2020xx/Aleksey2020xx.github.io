@@ -43,6 +43,29 @@ a {
   padding: 50px 200px;
 }
 
+@media (max-width:1440px) {
+  .wrapper {
+    max-width: 100%;
+    min-width: 360px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width:768px) {
+  .wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width:560px) {
+  .wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 .section-offset {
   margin-bottom: 50px;
 }
@@ -110,6 +133,12 @@ a {
   padding-bottom: 30px;
 }
 
+@media (max-width:1440px) {
+  .hero__paragph {
+    max-width: 100%;
+  }
+}
+
 .hero__list li {
   position: relative;
   padding-left: 10px;
@@ -165,6 +194,33 @@ a {
   margin-right: 0;
 }
 
+@media (max-width:1490px) {
+  .work__item {
+    flex-basis: 40%;
+    flex-grow: 0;
+    margin-bottom: 15px;
+  }
+
+  .work__item:nth-last-of-type(1), .work__item:nth-last-of-type(2) {
+    margin-bottom: 0px;
+  }
+
+  .work__item:nth-child(2n+2) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width:768px) {
+  .work__item {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+
+  .work__item:nth-last-of-type(2) {
+    margin-bottom: 15px;
+  }
+}
+
 .work__item::before {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
@@ -208,6 +264,10 @@ a {
   content: 'Адаптивный лендинг, написанный на SCSS и PUG, собран через gulp. Так же использовался js для подключения слайдеров и написания "бургер" меню';
 }
 
+.work-html:nth-child(4):before {
+  content: 'Адаптивный лендинг, для написания использовал SCSS и PUG, собирал через gulp. Добавлены анимации при скролле, плавный скролл и слайдер';
+}
+
 .cart__body {
   align-items: flex-end;
   justify-content: center;
@@ -242,6 +302,10 @@ a {
 
 .work-html:nth-child(3) .cart__body {
   background-image: url(../img/landing-3.png);
+}
+
+.work-html:nth-child(4) .cart__body {
+  background-image: url(../img/test-work.png);
 }
 
 .cart__link {
