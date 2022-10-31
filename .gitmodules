@@ -1,3 +1,9 @@
 [submodule "test-work"]
 	path = test-work
 	url = https://github.com/Aleksey2020xx/test-work.git
+[submodule "new-landing"]
+	path = new-landing
+	url = https://github.com/Aleksey2020xx/new-landing.git
+[submodule "pet-landing-2"]
+	path = pet-landing-2
+	url = https://github.com/Aleksey2020xx/pet-landing-2.git
