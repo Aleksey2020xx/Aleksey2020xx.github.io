@@ -6,6 +6,7 @@ html {
 
 body {
   min-width: 320px;
+  font-family: sans-serif;
 }
 
 * {
@@ -61,13 +62,17 @@ a {
 
 @media (max-width:560px) {
   .wrapper {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 8%;
+    padding-right: 8%;
   }
 }
 
 .section-offset {
   margin-bottom: 50px;
+}
+
+.hero {
+  margin-bottom: 0;
 }
 
 .flex {
@@ -127,10 +132,6 @@ a {
 
 .hero__link:focus {
   color: rgb(24, 24, 24);
-}
-
-.hero__paragph {
-  padding-bottom: 30px;
 }
 
 @media (max-width:1440px) {
