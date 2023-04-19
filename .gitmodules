@@ -8,5 +8,5 @@
 	path = pet-landing-2
 	url = https://github.com/Aleksey2020xx/pet-landing-2.git
 [submodule "analytics-landing"]
-path = work/analitics-landing
+path = analitics-landing
 url = https://github.com/Aleksey2020xx/analytics
