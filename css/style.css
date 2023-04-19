@@ -187,12 +187,17 @@ a {
   position: relative;
   width: 260px;
   margin-right: 15px;
+  margin-bottom: 15px;
   box-shadow: 0 0 10px 2px #000;
   overflow: hidden;
 }
 
 .work__item:first-child {
   margin-right: 0;
+}
+
+.work__item:nth-child(5n + 5) {
+  margin-bottom: 0;
 }
 
 @media (max-width:1490px) {
@@ -254,6 +259,10 @@ a {
   content: "Приложение написано на JS, стили заданы через CSS. Функционал состоит из добавления студентов в таблицу, сортировка таблицы, поиск студентов по параментрам";
 }
 
+.work-js:nth-child(4):before {
+  content: "Приложение веб-блога, в котором реализовано получение и отрисовка постов с внешнего ресурса. Так же реализована навигация не только внутри приложения, но и управление инструментами браузера (pushState). Демонстрация приложения возможно только при загрузке через сервер (например Live Server)";
+}
+
 .work-html:nth-child(1):before {
   content: 'Лендинг написан при помощи технологии flex, полностью адаптивен. Проработаны функции анимации модального окна, а так же адаптированы слайдеры и "бургер" меню';
 }
@@ -268,6 +277,10 @@ a {
 
 .work-html:nth-child(4):before {
   content: 'Адаптивный лендинг, для написания использовал SCSS и PUG, собирал через gulp. Добавлены анимации при скролле, плавный скролл и слайдер';
+}
+
+.work-html:nth-child(5):before {
+  content: 'Pet-project, основаная идея которого состоит в том, чтобы по максимому отработать анимацию с SVG фигурами. Анимация при скролле, бургер меню и т.д. написано на чистом JS, для слайдера использовал API SwiperJs';
 }
 
 .cart__body {
@@ -294,6 +307,10 @@ a {
   background-image: url(../img/table.png);
 }
 
+.work-js:nth-child(4) .cart__body {
+  background-image: url(../img/blog-js.png);
+}
+
 .work-html:nth-child(1) .cart__body {
   background-image: url(../img/landing-1.png);
 }
@@ -308,6 +325,10 @@ a {
 
 .work-html:nth-child(4) .cart__body {
   background-image: url(../img/test-work.png);
+}
+
+.work-html:nth-child(5) .cart__body {
+  background-image: url(../img/analytics.png);
 }
 
 .cart__link {
