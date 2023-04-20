@@ -211,9 +211,9 @@ a {
     margin-bottom: 0px;
   }
 
-  .work__item:nth-child(2n+2) {
+  /* .work__item:nth-child(2n+2) {
     margin-right: 0;
-  }
+  } */
 }
 
 @media (max-width:768px) {
